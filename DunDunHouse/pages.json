@@ -18,7 +18,15 @@
 				
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/goods/goods",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "商品列表"
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "DunDunHouse",

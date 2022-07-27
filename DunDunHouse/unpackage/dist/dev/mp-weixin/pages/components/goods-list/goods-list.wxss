@@ -23,48 +23,38 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.home swiper {
-  width: 750rpx;
-  height: 380rpx;
-}
-.home swiper image {
-  width: 100%;
-  height: 100%;
-}
-.home .nav {
+.goods_list.data-v-ff8ae0e2 {
+  padding: 0 15rpx;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.home .nav .nav_item {
-  width: 25%;
-  text-align: center;
+.goods_list .goods_item.data-v-ff8ae0e2 {
+  background: #fff;
+  width: 355rpx;
+  margin: 10rpx 0;
+  padding: 15rpx;
+  box-sizing: border-box;
 }
-.home .nav .nav_item view {
-  width: 120rpx;
-  height: 120rpx;
-  background-color: #b50e03;
-  border-radius: 60rpx;
-  margin: 10px auto;
-  line-height: 120rpx;
-  color: #fff;
-  font-size: 50rpx;
+.goods_list .goods_item image.data-v-ff8ae0e2 {
+  width: 80%;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
 }
-.home .nav .nav_item .icon-tupian {
-  font-size: 45rpx;
-}
-.home .nav .nav_item text {
-  font-size: 30rpx;
-}
-.home .hot_goods {
-  background-color: #eee;
-  overflow: hidden;
-  margin-top: 10px;
-}
-.home .hot_goods .tit {
-  height: 50px;
-  line-height: 50px;
+.goods_list .goods_item .price.data-v-ff8ae0e2 {
   color: #b50e03;
-  text-align: center;
-  letter-spacing: 20px;
-  background-color: #fff;
-  margin: 7px 0;
+  font-size: 36rpx;
+  margin: 20rpx 0 10rpx 0;
+}
+.goods_list .goods_item .price text.data-v-ff8ae0e2:nth-child(2) {
+  font-size: 28rpx;
+  color: #ccc;
+  text-decoration: line-through;
+}
+.goods_list .goods_item .name.data-v-ff8ae0e2 {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
