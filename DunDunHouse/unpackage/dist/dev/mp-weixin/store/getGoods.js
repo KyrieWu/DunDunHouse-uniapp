@@ -15,7 +15,6 @@ const actions = {
     let result = await util_api.myRequest({
       url: "/api/getgoods"
     });
-    console.log(result);
     if (result.statusCode == 200) {
       commit("GOODS", result.data.message);
     }

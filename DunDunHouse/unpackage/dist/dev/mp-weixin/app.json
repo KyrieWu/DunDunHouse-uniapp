@@ -4,7 +4,9 @@
     "pages/cart/cart",
     "pages/member/member",
     "pages/news/news",
-    "pages/goods/goods"
+    "pages/goods/goods",
+    "pages/contact/contact",
+    "pages/pics/pics"
   ],
   "window": {
     "navigationBarTextStyle": "white",

@@ -17,7 +17,6 @@ const actions = {
 		let result = await myRequest({
 			url: '/api/getgoods'
 		});
-		console.log(result)
 		if (result.statusCode == 200) {
 			commit("GOODS", result.data.message);
 		}

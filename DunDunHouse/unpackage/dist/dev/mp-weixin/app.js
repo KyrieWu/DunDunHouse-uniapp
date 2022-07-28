@@ -6,12 +6,15 @@ var util_api = require("./util/api.js");
 var store_index = require("./store/index.js");
 require("./store/swipers.js");
 require("./store/getGoods.js");
+require("./store/imgcategory.js");
 if (!Math) {
   "./pages/index/index.js";
   "./pages/cart/cart.js";
   "./pages/member/member.js";
   "./pages/news/news.js";
   "./pages/goods/goods.js";
+  "./pages/contact/contact.js";
+  "./pages/pics/pics.js";
 }
 const _sfc_main = {
   onLaunch: function() {

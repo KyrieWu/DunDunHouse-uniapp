@@ -1,1 +1,1 @@
-<view><view class="goods_list"><goods-list wx:if="{{a}}" u-i="60848da6-0" bind:__l="__l" u-p="{{a}}"/></view></view>
+<view><view class="goods_list"><goods-list wx:if="{{a}}" u-i="60848da6-0" bind:__l="__l" u-p="{{a}}"/><view wx:if="{{b}}" class="isOver">-----我是有底线的-----</view></view></view>

@@ -1,0 +1,1 @@
+<view class="contact"><image class="img" src="{{a}}" mode=""></image><view class="info"><view bindtap="{{b}}">联系电话:400--648-9090(点击拨打)</view><view class="">地址：陕西省西安市</view></view><map class="map" latitude="{{c}}" scale="{{d}}" longitude="{{e}}" markers="{{f}}"></map></view>

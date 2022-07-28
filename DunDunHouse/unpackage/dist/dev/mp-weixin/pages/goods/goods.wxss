@@ -26,3 +26,11 @@
 .goods_list {
   background-color: #eee;
 }
+.goods_list .isOver {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  font-size: 28rpx;
+}

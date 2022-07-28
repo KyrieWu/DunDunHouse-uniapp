@@ -1,1 +1,1 @@
-<view> 资讯 </view>
+<view class="news"><view class="news_item"><image src="https://demoapi.dtcms.net/upload/202104/16/01a894ee-3e7e-4de3-81b6-571f97ce0baa.jpg" mode=""></image><view class="right"><view class="tit"> 华为P50 Pro采用矩阵镜头模块设计曝光，华为P40即将跌至白菜价 </view><view class="info"><text>发表时间:</text><text>浏览:</text></view></view></view></view>

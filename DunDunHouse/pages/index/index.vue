@@ -26,21 +26,21 @@
 		reactive,
 		getCurrentInstance,
 		ref,
-		onBeforeMount,
+		onMounted,
 		computed
 	} from 'vue'
 	import {
 		useStore
 	} from 'vuex'
 	export default {
-		onLoad() {},
+		onLoad() {
+			this.getGoods();
+			this.getSwipers()
+		},
 		components: {
 			goodsList
 		},
 		setup() {
-			let $store = useStore();
-			$store.dispatch('getSwipers');
-			$store.dispatch('getGoods')
 			let navs = reactive([{
 					icon: 'iconfont icon-ziyuan',
 					title: '敦敦屋',
@@ -62,6 +62,19 @@
 					path: '/pages/videos/videos'
 				},
 			])
+			let $store = useStore();
+			
+			let getSwipers = function(){
+				$store.dispatch('getSwipers');
+			}
+			let getGoods = function(){
+				$store.dispatch('getGoods')
+			}
+			
+			// onMounted(()=>{
+			// 	getSwipers();
+			// 	getGoods();
+			// })
 
 			let swipers = computed(() => $store.state.swipers.swipers);
 			let goods = computed(() => $store.state.goods.goods);
@@ -75,7 +88,9 @@
 				swipers,
 				goods,
 				navs,
-				navItemClick
+				navItemClick,
+				getSwipers,
+				getGoods
 			}
 		},
 	}

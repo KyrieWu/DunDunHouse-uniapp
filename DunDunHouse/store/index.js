@@ -4,10 +4,12 @@ import {
 
 import swipers from './swipers.js'
 import goods from './getGoods.js'
+import imgcategory from './imgcategory.js'
 
 export default createStore({
 	modules: {
 		swipers: swipers,
-		goods: goods
+		goods: goods,
+		imgcategory: imgcategory
 	}
 })

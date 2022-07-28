@@ -3,14 +3,13 @@ var common_vendor = require("../../common/vendor.js");
 const goodsList = () => "../components/goods-list/goods-list.js";
 const _sfc_main = {
   onLoad() {
+    this.getGoods();
+    this.getSwipers();
   },
   components: {
     goodsList
   },
   setup() {
-    let $store = common_vendor.useStore();
-    $store.dispatch("getSwipers");
-    $store.dispatch("getGoods");
     let navs = common_vendor.reactive([
       {
         icon: "iconfont icon-ziyuan",
@@ -33,6 +32,13 @@ const _sfc_main = {
         path: "/pages/videos/videos"
       }
     ]);
+    let $store = common_vendor.useStore();
+    let getSwipers = function() {
+      $store.dispatch("getSwipers");
+    };
+    let getGoods = function() {
+      $store.dispatch("getGoods");
+    };
     let swipers = common_vendor.computed$1(() => $store.state.swipers.swipers);
     let goods = common_vendor.computed$1(() => $store.state.goods.goods);
     let navItemClick = function(url) {
@@ -44,7 +50,9 @@ const _sfc_main = {
       swipers,
       goods,
       navs,
-      navItemClick
+      navItemClick,
+      getSwipers,
+      getGoods
     };
   }
 };

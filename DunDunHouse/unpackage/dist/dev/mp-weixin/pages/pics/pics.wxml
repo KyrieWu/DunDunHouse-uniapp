@@ -1,0 +1,1 @@
+<view class="pics"><scroll-view scroll-y="true" class="left"><view wx:for="{{a}}" wx:for-item="item" wx:key="d" bindtap="{{item.b}}" class="{{item.c}}">{{item.a}}</view></scroll-view></view>
